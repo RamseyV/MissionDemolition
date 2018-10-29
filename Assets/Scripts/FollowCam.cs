@@ -8,7 +8,7 @@ public class FollowCam : MonoBehaviour {
 
     [Header("Set in Inspector")]
     public float easing = 0.05f;
-
+    public Vector2 minXY = Vector2.zero;
 
     [Header("Set Dynamically")]
     public float camZ;
@@ -22,13 +22,35 @@ public class FollowCam : MonoBehaviour {
 
     void FixedUpdate()
     {
+        //if(POI==null){
+        //    return;
+        //}
+
+
+        ////Get POI position
+        //Vector3 destination = POI.transform.position;
+
+        Vector3 destination;
         if(POI==null){
-            return;
+            destination = Vector3.zero;
+
+        }
+        else{
+            //get the position of the poi
+            destination = POI.transform.position;
+            //if poi is a profile check to see if it's at rest
+            if(POI.tag =="Projectile"){
+                //if is is sleeping(not moving)
+                if(POI.GetComponent<Rigidbody>().IsSleeping()){
+                    POI = null;
+                    return;
+                }
+            }
         }
 
-
-        //Get POI position
-        Vector3 destination = POI.transform.position;
+        //Limit X & Y to minimum values
+        destination.x = Mathf.Max(minXY.x, destination.x);
+        destination.y = Mathf.Max(minXY.y, destination.y);
 
         //Interpolate from the current Camera position toward destination
         destination = Vector3.Lerp(transform.position, destination, easing);
@@ -38,6 +60,11 @@ public class FollowCam : MonoBehaviour {
 
         //set the camera to the destination
         transform.position = destination;
+
+        //Set the orthographicSize of the camera to keep ground in view
+        Camera.main.orthographicSize = destination.y + 10;
+
+
 
     }
 

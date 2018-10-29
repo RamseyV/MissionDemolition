@@ -61,8 +61,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\LowPolyWater_Pack\Scripts\LowPolyWater.cs" />
+    <Compile Include="Assets\Scripts\Cloud.cs" />
+    <Compile Include="Assets\Scripts\CloudCrafter.cs" />
+    <Compile Include="Assets\Scripts\EndScene.cs" />
     <Compile Include="Assets\Scripts\FollowCam.cs" />
+    <Compile Include="Assets\Scripts\Goal.cs" />
+    <Compile Include="Assets\Scripts\MissionDemolition.cs" />
+    <Compile Include="Assets\Scripts\ProjectileLine.cs" />
+    <Compile Include="Assets\Scripts\RigidbodySleep.cs" />
+    <Compile Include="Assets\Scripts\Scores.cs" />
     <Compile Include="Assets\Scripts\Slingshot.cs" />
+    <Compile Include="Assets\Scripts\StartButton.cs" />
+    <None Include="Assets\LowPolyWater_Pack\LowPoly Island\Credits.txt" />
+    <None Include="Assets\LowPolyWater_Pack\Shaders\WaterShaded.shader" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/ramseyvillarreal/Shool/GameDesign/MissionDemolition/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

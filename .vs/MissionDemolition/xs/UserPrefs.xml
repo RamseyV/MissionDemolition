@@ -1,6 +1,21 @@
 ﻿<Properties StartupConfiguration="{340C932F-C289-9990-B470-24F57F6C3B35}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/EndScene.cs">
+    <Files>
+      <File FileName="Assets/Scripts/FollowCam.cs" Line="25" Column="6" />
+      <File FileName="Assets/Scripts/Cloud.cs" Line="56" Column="11" />
+      <File FileName="Assets/Scripts/CloudCrafter.cs" Line="77" Column="1" />
+      <File FileName="Assets/Scripts/RigidbodySleep.cs" Line="10" Column="36" />
+      <File FileName="Assets/Scripts/Slingshot.cs" Line="59" Column="50" />
+      <File FileName="Assets/Scripts/Goal.cs" Line="20" Column="27" />
+      <File FileName="Assets/Scripts/MissionDemolition.cs" Line="105" Column="29" />
+      <File FileName="Assets/Scripts/Scores.cs" Line="20" Column="43" />
+      <File FileName="Assets/Scripts/ProjectileLine.cs" Line="111" Column="18" />
+      <File FileName="Assets/Scripts/StartButton.cs" Line="21" Column="35" />
+      <File FileName="../ApplePicker/Assets/StartMenu.cs" Line="4" Column="34" />
+      <File FileName="Assets/Scripts/EndScene.cs" Line="17" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
